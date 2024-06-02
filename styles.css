@@ -170,7 +170,6 @@ body {
 
 .skills__text {
   color: var(--secondary-text-color);
-  text-align: justify;
 }
 
 /* Experience and additional info styles */
@@ -253,6 +252,7 @@ body {
 
 .additional-info__education-university-name {
   color: var(--secondary-text-color);
+  margin-bottom: 24px;
 }
 
 .additional-info__languages {
@@ -267,4 +267,47 @@ body {
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
+}
+
+/* Custom Styles */
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.skill {
+  display: inline-block;
+  padding: 4px 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background-color: var(--text-decoration-color);
+  text-align: center;
+}
+
+.contacts {
+  display: flex;
+  gap: 12px;
+}
+
+.contacts-link {
+  text-decoration: none;
+}
+
+.contacts-link:link,
+.contacts-link:visited {
+  color: var(--secondary-text-color);
+}
+.contacts-link:hover,
+.contacts-link:active {
+  color: var(--durability-text-color);
+}
+
+.contacts__icon-wrapper {
+  fill: var(--icon-color);
+  width: 16px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
 }
